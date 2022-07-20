@@ -18,20 +18,9 @@ def fizz_buzz(numbers):
         >>> numbers = [45, 22, 14, 65, 97, 72]
         >>> fizz_buzz(numbers)
         >>> numbers
-        ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
+        # ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
     """
-
     # Using range()
-
-    for i in range(len(numbers)):
-        if numbers[i] % 3 == 0 :
-            numbers[i] = "fizz"
-        if numbers[i] % 5 == 0 :
-            numbers[i] = "buzz"
-        if numbers[i] % 3 == 0  and numbers[i] % 5 == 0:
-            numbers[i] = "fizzbuzz"
-
-
     for i in range(len(numbers)):
         num = numbers[i]
         if num % 3 == 0 :
@@ -40,3 +29,22 @@ def fizz_buzz(numbers):
             numbers[i] = "buzz"
         if num % 3 == 0  and num % 5 == 0:
             numbers[i] = "fizzbuzz"
+
+
+"""
+    Output :
+    >>> numbers = [45, 22, 14, 65, 97, 72]
+    >>> def fizz_buzz(numbers):
+    ...     for i in range(len(numbers)):
+    ...         num = numbers[i]
+    ...         if num % 3 == 0 :
+    ...             numbers[i] = "fizz"
+    ...         if num % 5 == 0 :
+    ...             numbers[i] = "buzz"
+    ...         if num % 3 == 0  and num % 5 == 0:
+    ...             numbers[i] = "fizzbuzz"
+    ...
+    >>> fizz_buzz(numbers)
+    >>> numbers
+    ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
+"""
