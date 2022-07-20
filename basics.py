@@ -7,6 +7,7 @@
     Sample Easy Question
 
 """
+import doctest
 
 def fizz_buzz(numbers):
     """
@@ -18,7 +19,7 @@ def fizz_buzz(numbers):
         >>> numbers = [45, 22, 14, 65, 97, 72]
         >>> fizz_buzz(numbers)
         >>> numbers
-        # ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
+        ['fizzbuzz', 22, 14, 'buzzsss', 97, 'fizz']
     """
     # Using range()
     for i in range(len(numbers)):
@@ -29,6 +30,9 @@ def fizz_buzz(numbers):
             numbers[i] = "buzz"
         if num % 3 == 0  and num % 5 == 0:
             numbers[i] = "fizzbuzz"
+
+if __name__ == '__main__':
+    doctest.testmod()
 
 
 """
@@ -46,5 +50,13 @@ def fizz_buzz(numbers):
     ...
     >>> fizz_buzz(numbers)
     >>> numbers
+    ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
+
+
+    Doctest:
+
+    Expected:
+    ['fizzbuzz', 22, 14, 'buzzsss', 97, 'fizz']
+    Got:
     ['fizzbuzz', 22, 14, 'buzz', 97, 'fizz']
 """
