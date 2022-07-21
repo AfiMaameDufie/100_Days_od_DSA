@@ -35,7 +35,7 @@ if __name__ == '__main__':
     Output: 
     afimaamedufie@Afis-MacBook-Pro 100_Days_od_DSA % python enumerate.py -v
     Trying:
-        numbers = [45, 22, 14, 65, 97, 72]
+        numbers = [45, 90, 14, 65, 97, 72]
     Expecting nothing
     ok
     Trying:
@@ -56,3 +56,14 @@ if __name__ == '__main__':
     Test passed.
 
 """
+
+numbers = [45, 90, 14, 65, 97, 72]
+def fizz_buzz(numbers):
+    for i, num in enumerate(numbers):
+        num = numbers[i]
+        if num % 3 == 0 :
+            numbers[i] = "fizz"
+        if num % 5 == 0 :
+            numbers[i] = "buzz"
+        if num % 3 == 0  and num % 5 == 0:
+            numbers[i] = "fizzbuzz"
