@@ -120,3 +120,18 @@ lst = [1, 3, -1, -21, 2.5, 17]
 
 min(lst, key=lambda x : x * x)
 1
+
+# >>> any(lst, key=lambda x : x % 2 ==1 )
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: any() takes no keyword arguments
+
+
+# >>> [(lambda x : x % 2 ==1 ) (num) for num in lst]
+# [True, True, True, True, False, True]
+
+
+# >>> any([(lambda x : x % 2 ==1 ) (num) for num in lst])
+# True
+# >>> all([(lambda x : x % 2 ==1 ) (num) for num in lst])
+# False
