@@ -57,6 +57,8 @@ if __name__ == '__main__':
 
 """
 
+
+import doctest
 numbers = [45, 90, 14, 65, 97, 72]
 def fizz_buzz(numbers):
     for i, num in enumerate(numbers):
@@ -67,3 +69,33 @@ def fizz_buzz(numbers):
             numbers[i] = "buzz"
         if num % 3 == 0  and num % 5 == 0:
             numbers[i] = "fizzbuzz"
+
+
+"""
+    Running scripts from file was tricky 
+
+    >>> import doctest
+>>> numbers = [45, 90, 14, 65, 97, 72]
+>>> def fizz_buzz(numbers):
+...     for i, num in enumerate(numbers):
+...         num = numbers[i]
+...         if num % 3 == 0 :
+...             numbers[i] = "fizz"
+...         if num % 5 == 0 :
+...             numbers[i] = "buzz"
+...         if num % 3 == 0  and num % 5 == 0:
+...             numbers[i] = "fizzbuzz"
+...
+>>> fizzbuzz(numbers)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'fizzbuzz' is not defined. Did you mean: 'fizz_buzz'?
+>>> fi
+filter(     finally:    fizz_buzz(
+>>> fizz_buzz(numbers)
+>>> numbers
+['fizzbuzz', 'fizzbuzz', 14, 'buzz', 97, 'fizz']
+>>>
+
+
+"""
