@@ -24,3 +24,20 @@
 # >>>
 # >>> [square(num) for num in lst]
 # [1, 4, 25, 16]
+
+
+# Checking if function is odd or not
+
+# >>> lst = [1, 2, -5, 4, 9, 10]
+# >>>
+# >>> filter
+# <class 'filter'>
+# >>>
+# >>> def is_odd(x):
+# ...     return x % 2 == 1
+# ...
+# >>> filter(is_odd, lst)
+# <filter object at 0x104a27100>
+# >>>
+# >>> list(filter(is_odd, lst))
+# [1, -5, 9]
