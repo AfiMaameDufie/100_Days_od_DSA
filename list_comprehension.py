@@ -115,4 +115,8 @@ lst = [1, 3, -1, -21, 2.5, 17]
 max(lst, key=lambda x : x * x)
 -21
 
+# Finding min of a list of numbers 
+lst = [1, 3, -1, -21, 2.5, 17]
 
+min(lst, key=lambda x : x * x)
+1
