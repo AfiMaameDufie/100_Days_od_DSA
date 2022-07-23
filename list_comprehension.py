@@ -91,3 +91,28 @@ grid
 # >>> grid
 # [[0, 0, 0], [0, 0, 0]]
 # >>>
+
+
+# List Comprehension
+grid = [[0 for _ in range(num_cols)] for _ in range(num_rows)]
+# >>> grid
+[[0, 0, 0], [0, 0, 0]]
+
+
+# Max max() func takes in numbers and returns the max and also a list
+
+# >>> max
+# <built-in function max>
+# >>>
+# >>> lst = [1, 3, -1, -21, 2.5, 17]
+# >>>
+# >>> max(lst)
+# 17
+
+# How to find max square of a list of numbers
+
+lst = [1, 3, -1, -21, 2.5, 17]
+max(lst, key=lambda x : x * x)
+-21
+
+
