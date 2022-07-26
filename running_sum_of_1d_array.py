@@ -29,3 +29,7 @@ class Solution:
             sum_of_list.append(nums[i])
             sum_of_list[-1] = sum_of_list[-1] + sum_of_list[-2]
         return sum_of_list 
+
+
+# time complexity = O(n)
+# space complexity = O(1)
