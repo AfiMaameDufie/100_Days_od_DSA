@@ -26,3 +26,18 @@
     Output: 17
 '''
 
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+#         Initialize the maximum wealth so far
+        max_wealth_so_far= 0
+#         Go over the accounts
+        for account in accounts:
+#           Check if current sum is greater than max_wealth_so_far: replace else maintain
+            if(sum(account) > max_wealth_so_far):
+                max_wealth_so_far = sum(account)
+#           Return the max wealth
+        return max_wealth_so_far
+
+
+# O(n)
+# O(n)
