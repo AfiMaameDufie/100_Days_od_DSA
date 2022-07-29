@@ -44,3 +44,26 @@ class Solution:
 # Time and Space Complexity
 # O(logn)
 # O(1)
+
+
+# Bitwise Operation:
+# By checking the leftmost value of a number, you can determine whether it is odd or even.
+# odd = 1 ; even = 0
+
+
+# Using Bitmask
+
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        
+            counter = 0 
+            while num!= 0:
+                if (num & 1 == 0):
+                    num >>= 1
+
+                else:
+                    num-=1
+                    
+                counter+=1
+
+            return counter
