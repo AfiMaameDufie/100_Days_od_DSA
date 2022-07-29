@@ -39,3 +39,8 @@ class Solution:
                 counter+=1
 
             return counter
+
+
+# Time and Space Complexity
+# O(logn)
+# O(1)
