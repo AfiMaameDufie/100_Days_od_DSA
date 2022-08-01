@@ -35,3 +35,5 @@ Twice each week, record how long it takes you to solve two new randomly selected
 
 3. Read inspiring comments or posts.
 
+https://leetcode.com/explore/featured/card/top-interview-questions-easy/
+https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/727/
