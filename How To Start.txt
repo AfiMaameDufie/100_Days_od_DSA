@@ -1,0 +1,37 @@
+A common question when first joining LeetCode is: "Where should I start?"
+
+Our recommended starting points depend on:
+
+How much time you have to prepare for your interview (if you are preparing for an interview).
+What your end goal is. Are you looking to build up your data structures and algorithms (DSA) skills, competitive programming skills, or problem-solving capabilities?
+Which data structures and algorithms you already feel comfortable with.
+
+While on the Explore Card Track, we recommend, for each topic, go through the tutorial material in the Explore Card, then go to the problems page and pick out 5 to 10
+problems of suitable difficulty (easy/medium) that have the topic tag for the current explore card. Spend 15 - 20 minutes trying to solve each one.
+
+Study Tip: We all solve problems at different speeds, and this speed very gradually increases over time. Some may spend an hour on the average problem, and some may 
+spend 5 to 10 minutes. Don't use the 15 to 20 minutes as a concrete time limit. Go at your own pace, and when you're stuck, first check just the titles in the discussion 
+section or just the hints for the problem, then give the problem a little more thought. If you're still stuck, then check the solution article and discussion posts.
+
+https://leetcode.com/study-plan/
+https://leetcode.com/problemset/all/?difficulty=EASY&page=1
+https://leetcode.com/problemset/all/
+https://leetcode.com/assessment/
+https://leetcode.com/discuss/interview-experience?currentPage=1&orderBy=newest_to_oldest&query=
+https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode
+
+
+1. Pick a personal goal:
+
+I will solve at least X problems each week. Set the number to be easily attainable, but aim to surpass it.
+I will reach Knight level in the contest rating.
+I will attempt every Daily Coding Challenge problem this month.
+I will solve at least one problem, at this time, every day.
+
+2. Quantify your progress, and plot your results every month or so:
+
+Participate in the weekly or biweekly tournaments consistently. You can look back to see how many problems you solved each week. Keep in mind that poor performance weeks are perfectly normal. All that matters is that your average performance improves over time.
+Twice each week, record how long it takes you to solve two new randomly selected problems, say one easy and one medium. Interview assessments are a good tool for this.
+
+3. Read inspiring comments or posts.
+
