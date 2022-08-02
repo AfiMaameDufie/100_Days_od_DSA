@@ -37,3 +37,5 @@ class Solution:
                 if nums[j] == target - nums[i]:
                     return [i, j]
             
+# Time : O(n**2)
+# Space : O(n)
