@@ -39,3 +39,16 @@ class Solution:
             
 # Time : O(n**2)
 # Space : O(n)
+
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         Create empty hashmap
+        hashmap = {}
+#     Create for loop to go through nums for each element 
+        for i in range(len(nums)):
+#         Check if the current elements complement is available and return the element and the complement 
+            complement = target - nums[i]
+            if complement in hashmap:
+                return [i, hashmap[complement]]
+            hashmap[nums[i]] = i
