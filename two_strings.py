@@ -37,3 +37,25 @@ class Solution:
                 if nums[j] == target - nums[i]:
                     return [i, j]
             
+# Time : O(n**2)
+# Space : O(n)
+
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         Create empty hashmap
+        hashmap = {}
+#     Create for loop to go through nums for each element 
+        for i in range(len(nums)):
+#         Check if the current elements complement is available and return the element and the complement 
+            complement = target - nums[i]
+            if complement in hashmap:
+                return [i, hashmap[complement]]
+            hashmap[nums[i]] = i
+
+
+# Complexity Analysis
+
+# Time complexity: O(n)O(n). We traverse the list containing nn elements only once. Each lookup in the table costs only O(1)O(1) time.
+
+# Space complexity: O(n)O(n). The extra space required depends on the number of items stored in the hash table, which stores at most nn elements.
