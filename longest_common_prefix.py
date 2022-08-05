@@ -24,3 +24,22 @@
     strs[i] consists of only lowercase English letters.
 
 '''
+
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        
+#       create empty list to hold prefixes
+        prefix = []
+    
+#       getting length of list
+        length = len(strs)
+
+#     The zip() function returns a zip object
+        for i in zip(*strs):
+            if len(set(i)) == 1:
+                prefix.append(i[0])
+            else:
+                break
+        return "".join(prefix)
+    
+#      O(n,m)
