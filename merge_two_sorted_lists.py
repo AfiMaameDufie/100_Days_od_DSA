@@ -74,3 +74,6 @@ class Solution:
         # because at first we took a random dummy so we don't need that    
         return dummyNode.next              
 
+
+# Algorithm Complexity
+# O(n)
