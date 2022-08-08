@@ -44,3 +44,16 @@
     -100 <= nums[i] <= 100
     nums is sorted in non-decreasing order.
 '''
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i = 1
+        
+        for j in range(1,len(nums)):
+#             [2, 8, 6, 9, 5]
+            if nums[j] != nums[j-1]:
+                nums[i] = nums[j]
+                i+=1
+        return i
+    
+    
