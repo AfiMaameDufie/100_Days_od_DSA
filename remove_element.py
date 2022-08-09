@@ -60,3 +60,8 @@ class Solution:
                 nums[counter] = nums[i]
                 counter += 1
         return counter
+
+
+# Algorithm Complexity
+# O(n)
+# 1 pointer
