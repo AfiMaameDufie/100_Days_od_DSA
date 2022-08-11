@@ -28,3 +28,10 @@
     nums contains distinct values sorted in ascending order.
     -104 <= target <= 104
 '''
+
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for i, num in enumerate(nums):
+            if num >= target:
+                return i
+        return len(nums)
