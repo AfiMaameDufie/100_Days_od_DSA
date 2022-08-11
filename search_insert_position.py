@@ -35,3 +35,6 @@ class Solution:
             if num >= target:
                 return i
         return len(nums)
+
+# Algorithm Complexity
+# O(n)
