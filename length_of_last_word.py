@@ -31,3 +31,13 @@
     There will be at least one word in s.
 
 '''
+
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+            split_string=s.split()
+            last=split_string[::-1]
+            return len(last[0])
+
+
+# Algorithm
+# O(n)
