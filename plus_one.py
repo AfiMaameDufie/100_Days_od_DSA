@@ -41,7 +41,13 @@
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+#       Convert to string
         plus = [str(i) for i in digits]
+        print(plus)
+#       split string
         plus = ''.join(plus)
+        print(plus)
+#       increase integer by 1
         plus = str(int(plus)+1)
+        print(plus)
         return [int(i) for i in plus]
