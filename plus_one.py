@@ -51,3 +51,6 @@ class Solution:
         plus = str(int(plus)+1)
         print(plus)
         return [int(i) for i in plus]
+
+# Algorithm Complexity
+# O(n)
