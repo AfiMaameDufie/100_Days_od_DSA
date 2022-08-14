@@ -27,3 +27,6 @@ class Solution:
 
 # Algorithm Complexity
 # O(n)
+
+# a = int(a,2) converts the binary string a to integer
+# and bin(a).replace("0b","") converts integers to binary.
