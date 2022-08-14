@@ -54,3 +54,4 @@ class Solution:
 
 # Algorithm Complexity
 # O(n)
+# O(1)
