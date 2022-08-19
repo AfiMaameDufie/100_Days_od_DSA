@@ -57,3 +57,6 @@ class Solution:
 #         nums1.sort()
 
         nums1[:] = sorted(nums1[:m]+nums2)
+
+# Splicing 
+# Extend()
