@@ -58,6 +58,7 @@ class Solution:
 
         nums1[:] = sorted(nums1[:m]+nums2)
 
+
 # The slice() function returns a slice object.
 
 # A slice object is used to specify how to slice a sequence.
@@ -130,3 +131,7 @@ print('Newer Languages List:', languages)
 
 # New Languages List: ['French', 'Spanish', 'Portuguese']
 # Newer Languages List: ['French', 'Spanish', 'Portuguese', 'Japanese', 'Chinese']
+
+# Splicing 
+# Extend()
+
