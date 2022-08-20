@@ -57,3 +57,77 @@ class Solution:
 #         nums1.sort()
 
         nums1[:] = sorted(nums1[:m]+nums2)
+
+# The slice() function returns a slice object.
+
+# A slice object is used to specify how to slice a sequence.
+#You can specify where to start the slicing, and where to end. You can also specify the step, which allows you to e.g. slice only every other item.
+
+# slice(start, end, step)
+
+
+a = ("a", "b", "c", "d", "e", "f", "g", "h")
+
+x = slice(0, 8, 3)
+
+print(a[x])
+
+('a', 'd', 'g')
+
+
+# Syntax:
+
+# Lst[ Initial : End : IndexJump ]
+
+# Initialize list
+Lst = [50, 70, 30, 20, 90, 10, 50]
+
+# Display list
+print(Lst[::])
+
+
+[50, 70, 30, 20, 90, 10, 50]
+
+
+
+# Extend ()
+# The extend() method adds all the elements of an iterable (list, tuple, string etc.) to the end of the list.
+
+# create a list
+prime_numbers = [2, 3, 5]
+
+# create another list
+numbers = [1, 4]
+
+# add all elements of prime_numbers to numbers
+numbers.extend(prime_numbers)
+
+
+print('List after extend():', numbers)
+
+# Output: List after extend(): [1, 4, 2, 3, 5]
+
+
+# languages list
+languages = ['French']
+
+# languages tuple
+languages_tuple = ('Spanish', 'Portuguese')
+
+# languages set
+languages_set = {'Chinese', 'Japanese'}
+
+# appending language_tuple elements to language
+languages.extend(languages_tuple)
+
+
+print('New Language List:', languages)
+
+# appending language_set elements to language
+languages.extend(languages_set)
+
+
+print('Newer Languages List:', languages)
+
+# New Languages List: ['French', 'Spanish', 'Portuguese']
+# Newer Languages List: ['French', 'Spanish', 'Portuguese', 'Japanese', 'Chinese']
