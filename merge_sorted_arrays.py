@@ -74,7 +74,6 @@ print(a[x])
 
 ('a', 'd', 'g')
 
-
 # Syntax:
 
 # Lst[ Initial : End : IndexJump ]
