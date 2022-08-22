@@ -43,4 +43,18 @@ class Solution:
         return self.res
     
 
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        res = []
+        
+        def Inorder(root):
+            if not root: return
+
+            Inorder(root.left)
+            res.append(root.val)
+            Inorder(root.right)
+
+        Inorder(root)
+        return res
+
             
