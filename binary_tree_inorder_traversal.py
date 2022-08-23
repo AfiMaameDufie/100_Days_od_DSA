@@ -57,4 +57,8 @@ class Solution:
         Inorder(root)
         return res
 
-            
+# DFS Traversal Solutions:
+
+# Pre-Order (Root, Left, Right)
+# In-Order (Left, Root, Right)
+# Post-Order (Left, Root, Right)
