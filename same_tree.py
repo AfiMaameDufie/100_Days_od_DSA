@@ -37,6 +37,19 @@ class Solution:
         if p.val != q.val:
             return False
         return self.isSameTree(p.right, q.right) and self.isSameTree(p.left, q.left)
+
+                # If both trees are empty then return true...
+        if p == None and q == None:
+            return True
+        # If one of the tree is empty and the other is not then return false...
+        elif p == None or q == None:
+            return False
+        # If the value of p tree is equal to the value of q tree...
+        elif p.val == q.val:
+            # continue to judge the value of the left and right subtrees
+            return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        # If the value is different, false is returned
+        return False
     
 
 # Algorithm Complexity
