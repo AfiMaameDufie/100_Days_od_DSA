@@ -24,3 +24,35 @@
     -104 <= nums[i] <= 104
     nums is sorted in a strictly increasing order.
 '''
+
+'''
+Method: recursion
+
+Since nums is a sorted list, the middle element nums[len(nums)//2] must be the root node of nums.
+Thus, after setting the middle element be the root, finding the middle element in the left subarry nums[:len(nums)//2] and right subarry nums[len(nums)//2 + 1 : ]
+
+For example, nums = [0, 1, 2, 3, 4, 5, 6, 7]
+'''
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+#         Checking length total num
+
+        total_nums = len(nums)
+        
+#         If it is null return None
+        if not total_nums:
+            return None
+        
+#         Finding the mid node
+        mid = total_nums // 2
+        
+        return TreeNode(
+            nums[mid], self.sortedArrayToBST(nums[:mid]), self.sortedArrayToBST(nums[mid + 1:])
+        )
