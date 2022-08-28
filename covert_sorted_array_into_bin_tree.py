@@ -56,3 +56,8 @@ class Solution:
         return TreeNode(
             nums[mid], self.sortedArrayToBST(nums[:mid]), self.sortedArrayToBST(nums[mid + 1:])
         )
+
+
+# Algo Complexity
+# Time Complexity: O(n log n)
+# Space Complexity: O(n)
