@@ -89,3 +89,6 @@ class Solution:
             self.balanced = False
         return max(l,r)+1
         
+
+# Algorithm Complexity
+# O(nlogn)
