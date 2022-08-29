@@ -66,28 +66,6 @@ class Solution():
         return l == r
 
 
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    balanced = True
-    
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        if root == None:
-            return True
-        return self.checkBalance(root)
-    
-    def checkBalance(self, root):
-        if(root==None): return 0
-        l = self.checkBalance(root.left)
-        r = self.checkBalance(root.right)
-        
-        if (abs(l-r) > 1):
-            self.balanced = False
-        return max(l,r)+1
         
 
 # Algorithm Complexity
