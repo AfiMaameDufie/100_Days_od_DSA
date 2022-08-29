@@ -20,3 +20,7 @@ class Solution:
         if abs(left - right) <=1:
             return True and self.isBalanced(root.left) and self.isBalanced(root.right)
         return False
+
+
+# Algorithm Complexity
+# O(nlogn)
