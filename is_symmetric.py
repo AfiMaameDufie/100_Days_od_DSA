@@ -64,5 +64,3 @@ class Solution():
     # Return true if the values of root nodes are same and left as well as right subtrees are symmetric / on both sides
             return l.val == r.val and self.dfs(l.left, r.right) and self.dfs(l.right, r.left)
         return l == r
-
-
